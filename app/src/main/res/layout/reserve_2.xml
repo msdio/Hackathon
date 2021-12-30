@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 하단 메뉴 바 -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bottom_menu_style">
+
+        <LinearLayout
+            android:id="@+id/home_menu_re2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/dark_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홈"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservation"
+                app:tint="@color/blue"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 신청"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/board_menu_re2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/board"
+                app:tint="@color/dark_gray"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게시판"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_menu_re2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"
+                app:tint="@color/dark_gray"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마이 핸드리"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 선택 완료 버튼 -->
+    <Button
+        android:id="@+id/reserve_2_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#408BED"
+        android:text="10,000원 주문하기"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="55dp">
+
+        <!-- 상단 파란 바 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#408BED" />
+
+        <!-- 뒤로가기 버튼, 예약하기 글씨, 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/back_button"
+                app:tint="#408BED"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="예약하기"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/close_2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/close"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <!-- 회색 바 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#E8E8E8" />
+
+        <!-- 진행 상태 바 -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:src="@drawable/progressbar_2"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"/>
+
+        <!-- 옷 종류 선택 -->
+        <RadioGroup
+            android:id="@+id/radio_group_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_tshirts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tshirt_resize"
+                android:text="상의"
+                android:textAlignment="center"
+                android:background="@drawable/radio_custom"/>
+            <RadioButton
+                android:id="@+id/radio_suit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/suit_resize"
+                android:text="외투"
+                android:textAlignment="center"
+                android:background="@drawable/radio_custom"/>
+            <RadioButton
+                android:id="@+id/radio_shorts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shorts_resize"
+                android:text="하의"
+                android:textAlignment="center"
+                android:background="@drawable/radio_custom"/>
+            <RadioButton
+                android:id="@+id/radio_shoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shoe_resize"
+                android:text="신발"
+                android:textAlignment="center"
+                android:background="@drawable/radio_custom"/>
+            <RadioButton
+                android:id="@+id/radio_bedsheeets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bed_sheets_resize"
+                android:text="침구"
+                android:textAlignment="center"
+                android:background="@drawable/radio_custom"/>
+
+
+        </RadioGroup>
+
+        <!-- 옷 종류 선택 여긴 나중에 리사이클러 뷰로 변경 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_menus"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남성 와이셔츠"
+                android:textSize="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="2,000 원"
+                android:gravity="right"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_select"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/minus_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/number_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0 "/>
+                <TextView
+                    android:id="@+id/plus_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_menus"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="8dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성 블라우스"
+                android:textSize="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="3,000 원"
+                android:gravity="right"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_select"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/minus_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/number_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0 "/>
+                <TextView
+                    android:id="@+id/plus_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_menus"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="8dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="반팔 티셔츠    "
+                android:textSize="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="3,900 원"
+                android:gravity="right"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_select"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/minus_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/number_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0 "/>
+                <TextView
+                    android:id="@+id/plus_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_menus"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="8dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="니트 / 스웨터 "
+                android:textSize="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="8,900 원"
+                android:gravity="right"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_select"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/minus_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/number_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0 "/>
+                <TextView
+                    android:id="@+id/plus_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_menus"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="8dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원피스             "
+                android:textSize="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="7,500 원"
+                android:gravity="right"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_select"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/minus_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/number_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0 "/>
+                <TextView
+                    android:id="@+id/plus_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 회색 바 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#E8E8E8"
+            android:layout_marginTop="20dp"/>
+
+        <!-- 선택 상품 개수 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택한 상품"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="반팔 티셔츠 2, 원피스 1"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

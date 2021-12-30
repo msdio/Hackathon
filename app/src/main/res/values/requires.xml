@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="requirements">
+        <item>요청사항 1</item>
+        <item>요청사항 2</item>
+        <item>요청사항 3</item>
+        <item>기타..</item>
+    </string-array>
+
+</resources>

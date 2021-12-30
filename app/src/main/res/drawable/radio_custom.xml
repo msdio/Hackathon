@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- UNSELECTED -->
+    <item android:state_checked="false">
+        <shape>
+            <stroke android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <!-- SELECTED -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- background -->
+            <item>
+                <shape>
+                    <solid android:color="#E3E3E3"/>
+                    <corners android:radius="5dp"/>
+                </shape>
+            </item>
+            <!-- image -->
+            <item>
+                <shape>
+                    <solid android:color="#E3E3E3"/>
+                    <corners android:radius="5dp"/>
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 하단 메뉴 바 -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bottom_menu_style">
+
+        <LinearLayout
+            android:id="@+id/home_menu_re1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/dark_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홈"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reservation"
+                app:tint="@color/blue"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 신청"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/board_menu_re1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/board"
+                app:tint="@color/dark_gray"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게시판"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/user_menu_re1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"
+                app:tint="@color/dark_gray"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마이 핸드리"
+                android:textColor="@color/dark_gray"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 선택 완료 버튼 -->
+    <Button
+        android:id="@+id/reserve_1_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택완료"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#408BED"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="55dp">
+
+        <!-- 상단 파란 바 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#408BED" />
+
+        <!-- 예약하기 글씨, 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="예약하기"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"/>
+            <ImageView
+                android:id="@+id/close_1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/close"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <!-- 회색 바 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#E8E8E8" />
+
+        <!-- 진행 상태 바 -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:src="@drawable/progressbar_1"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"/>
+
+        <!-- 세탁소 정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/round_menus"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="희망 세탁소"
+                android:textColor="#302F2F"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"/>
+            <View
+                android:layout_width="110dp"
+                android:layout_height="2dp"
+                android:background="#408BED"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/shop_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시 강남구 강남대로 xx길 - xx"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="13dp"
+                android:textColor="#8C8B8B" />
+            <TextView
+                android:id="@+id/shop_zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="1dp"
+                android:textColor="#8C8B8B" />
+
+        </LinearLayout>
+
+        <!-- 날짜 선택 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜 선택"
+                android:textSize="18dp"
+                android:textColor="#302F2F" />
+
+            <TextView
+                android:id="@+id/sel_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021-12-23 (금)"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#302F2F"
+                android:background="@drawable/text_underline"/>
+
+        </LinearLayout>
+
+        <!-- 당일 픽업 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/day_service"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_menus"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="당일픽업 (+3,000)"
+                android:textColor="#302F2F"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginBottom="12dp"
+                android:text="*이용 가능 시간 : 07:00 ~ 18:00"
+                android:textColor="#DC5B5B"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/day_service_uncheck"
+                android:layout_width="31dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.513"
+                app:srcCompat="@drawable/unchecked" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <!-- 날짜 선택
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp">
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_menus"
+                android:gravity="center"
+                android:text="12 / 23\n마감"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_menus"
+                android:gravity="center"
+                android:text="12 / 24\n금요일"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_menus"
+                android:gravity="center"
+                android:text="12 / 25\n토요일"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:background="@drawable/round_menus"
+                android:gravity="center"
+                android:text="12 / 26\n일요일"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        -->
+
+        <!-- 시간 선택 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 선택"
+            android:textColor="#302F2F"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_button_day"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button_check"
+                android:text="오전 (08:00 ~ 09:00)"
+                android:paddingLeft="7dp"
+                android:checked="true"
+                android:background="@drawable/round_menus_selected" />
+
+            <RadioButton
+                android:id="@+id/radio_button_night"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_button_check"
+                android:text="오후 (20:00 ~ 21:00)"
+                android:paddingLeft="7dp"
+                android:background="@drawable/round_menus"
+                android:layout_marginTop="5dp"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

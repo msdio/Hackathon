@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_view"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="start"
+    android:background="@drawable/nav_round"
+    android:backgroundTint="@color/white">
+
+    <!-- close button -->
+    <ImageView
+        android:id="@+id/nav_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/close"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <!-- user profile -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/round"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/img_jw"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jw"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/nav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_jw"
+            android:text="신장운"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_jw"
+            android:layout_below="@id/nav_name"
+            android:text="멤버십 이용중"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="13dp"
+            android:letterSpacing="0.08"/>
+    </RelativeLayout>
+
+
+    <!-- top menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp">
+
+
+        <!-- 내 정보 -->
+        <LinearLayout
+            android:id="@+id/drawer_user"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/drawer_user"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 정보"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!-- 이용내역 -->
+        <LinearLayout
+            android:id="@+id/drawer_list"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/drawer_list"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이용내역"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <!-- 쿠폰함 -->
+        <LinearLayout
+            android:id="@+id/drawer_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/drawer_coupons"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쿠폰함"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <!-- 고객센터 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고객센터"
+        android:textColor="@color/blue"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지사항"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:1 문의"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <!-- 커뮤니티 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="커뮤니티"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이벤트"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시판"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <!-- 환경설정 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/setting_round"
+            android:backgroundTint="@color/gray">
+
+            <ImageView
+                android:id="@+id/nav_seticon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/setting"
+                android:layout_toLeftOf="@id/nav_setname"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/nav_setname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="환경설정"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

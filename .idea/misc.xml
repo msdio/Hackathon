@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/bed_sheets_resize.xml" value="0.2385" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/bottom_menu_style.xml" value="0.2025" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/checked_resize.xml" value="0.199" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/day_service_button.xml" value="0.199" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/dayservice_button.xml" value="0.199" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/img_resize.xml" value="0.183" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/nav_round.xml" value="0.2775" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/number_select.xml" value="0.247" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/plus_edit.xml" value="0.229" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/radio_button_check.xml" value="0.199" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/radio_custom.xml" value="0.2085" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/round.xml" value="0.2415" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/round_menus.xml" value="0.221" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/round_menus_checked.xml" value="0.221" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/round_menus_selected.xml" value="0.1945" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/setting_round.xml" value="0.1995" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/shoe_resize.xml" value="0.2385" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/shorts_resize.xml" value="0.2385" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/spinner_bg.xml" value="0.243" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/suit_resize.xml" value="0.2385" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/text_underline.xml" value="0.221" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/tshirt_resize.xml" value="0.2385" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/drawable/unchecked_resize.xml" value="0.199" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/activity_intro.xml" value="0.5" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/banner_1.xml" value="0.5" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/banner_2.xml" value="0.5" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/card_1.xml" value="0.28888888888888886" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/card_2.xml" value="0.3787037037037037" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/card_3.xml" value="0.5265625" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/map_main.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/navigation_header.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/navigation_main.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/navigation_menu.xml" value="0.5" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/reserve_1.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/reserve_2.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/reserve_3.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/layout/reserve_4.xml" value="0.33" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/menu/bottom_menu.xml" value="0.5" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/menu/navigation_menu.xml" value="0.5385416666666667" />
+        <entry key="..\:/Users/Kim/AndroidStudioProjects/Hackathon2/app/src/main/res/mipmap-anydpi-v26/handry_logo.xml" value="0.1485" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
